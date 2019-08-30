@@ -1,0 +1,11 @@
+{
+  "name": "dnd_chronicles",
+  "version": "0.1.0",
+  "description": "The chronicles of Brynjar Storsnorre",
+  "main": "index.js",
+  "author": "Niklas Mähler <niklas.mahler@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
