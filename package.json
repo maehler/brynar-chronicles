@@ -6,6 +6,12 @@
   "author": "Niklas Mähler <niklas.mahler@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^4.0.2"
-  }
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "normalize.css": "^8.0.1"
+  },
+  "dependencies": {}
 }
