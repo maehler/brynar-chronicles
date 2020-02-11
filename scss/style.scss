@@ -1,3 +1,83 @@
-.testing {
-    width: percentage(5/7);
+$bg-color: #eee;
+$main-color: #fff;
+$accent-color: #888;
+$active-color: #ddd;
+$text-color: #333;
+$foreground-color: #333;
+
+body {
+    background-color: $bg-color;
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    color: $text-color;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 25px;
+}
+
+header {
+    nav {
+        color: $text-color;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: $accent-color;
+
+            li {
+                float: left;
+                display: inline;
+                margin: 0;
+                padding: 0;
+
+                a {
+                    display: block;
+                    background-color: $accent-color;
+                    color: $text-color;
+                    text-decoration: none;
+                    padding: 8px;
+                    margin: 0;
+
+                    &:hover {
+                        background-color: $active-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    position: relative;
+    background: $main-color;
+    max-width: 70%;
+
+    aside {
+        float: right;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    }
+
+    section {
+	height: auto;
+	overflow: hidden;
+	padding: 20px;
+	background: $main-color;
+    }
 }
