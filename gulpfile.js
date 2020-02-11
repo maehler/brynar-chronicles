@@ -54,6 +54,25 @@ function markdown() {
         .pipe(gulp.dest('entries/'));
 }
 
+function html() {
+    return gulp.src(['index.html', 'songs.html'], {base: './'})
+        .pipe(inject(gulp.src(['templates/head.html']), {
+            starttag: '<!-- inject:head -->',
+            relative: true,
+            transform: function(filePath, file) {
+                return file.contents.toString('utf8');
+            }
+        }))
+        .pipe(inject(gulp.src(['templates/header.html']), {
+            starttag: '<!-- inject:header -->',
+            relative: true,
+            transform: function(filePath, file) {
+                return file.contents.toString('utf8');
+            }
+        }))
+        .pipe(gulp.dest('./'));
+}
+
 function index() {
     return gulp.src('index.html')
         .pipe(inject(gulp.src(['entries/all.html']), {
@@ -72,4 +91,5 @@ exports.build = build;
 exports.css = css;
 exports.markdown = markdown;
 exports.watch = watch;
+exports.html = html;
 exports.index = index;
