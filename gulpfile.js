@@ -33,6 +33,7 @@ function css() {
 }
 
 function watchFiles() {
+    gulp.watch('entries/md/*.md', gulp.series(markdown, index));
     gulp.watch('scss/**/*.scss', css);
     gulp.watch('**/*.html', reload);
 }
@@ -64,7 +65,7 @@ function index() {
         .pipe(gulp.dest('./'));
 }
 
-const build = gulp.parallel(css, markdown, index);
+const build = gulp.parallel(css, gulp.series(markdown, index));
 const watch = gulp.parallel(watchFiles, browserSync);
 
 exports.build = build;
