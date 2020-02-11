@@ -9,6 +9,9 @@
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
+    "gulp-concatenate": "^0.1.4",
+    "gulp-inject": "^5.0.5",
+    "gulp-pandoc": "^0.2.2",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "normalize.css": "^8.0.1"
