@@ -1,6 +1,7 @@
 ---
 title: The world deserves better stories
 date: 2019-08-16
+id: world-deserves-better-stories
 ---
 
 - Currently at the tavern Red Larch Rambler in Red Larch.
