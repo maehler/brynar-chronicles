@@ -34,7 +34,7 @@ function css() {
 
 function watchFiles() {
     gulp.watch('entries/md/*.md', gulp.series(markdown, index));
-    gulp.watch('scss/**/*.scss', css);
+    gulp.watch('scss/**/*.scss', gulp.series(css, reload));
     gulp.watch('**/*.html', reload);
 }
 
