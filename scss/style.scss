@@ -25,6 +25,10 @@ p {
 }
 
 header {
+    h1 {
+        margin-left: 1em;
+    }
+
     nav {
         color: $text-color;
 
@@ -59,25 +63,59 @@ header {
 }
 
 main {
-    position: relative;
+    display: flex;
+    justify-content: flex-start;
     background: $main-color;
-    max-width: 70%;
+    margin: 0;
+    padding: 0 0 2em 1em;
 
     aside {
-        float: right;
-
         ul {
-            list-style-type: none;
+            list-style-type: square;
             margin: 0;
             padding: 0;
-            overflow: hidden;
+
+            li {
+                a {
+                    text-decoration: none;
+
+                    &:active {
+                    }
+
+                    &:hover {
+                    }
+                }
+            }
         }
     }
 
-    section {
-	height: auto;
-	overflow: hidden;
-	padding: 20px;
-	background: $main-color;
+    .entries {
+        margin-left: 2em;
+
+        section {
+            width: 80ex;
+            background: $main-color;
+
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+
+            p:not(:first-of-type) {
+                text-indent: 1.2em;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
     }
+}
+
+footer {
+    display: flex;
+    margin-top: 2em;
+    padding: 1em;
+    justify-content: center;
 }
