@@ -35,7 +35,7 @@ Beneath the head is an enormous pile of treasure.
 On his way out of the cavern, there is another click, and another fireball.
 He makes his way out, a bit zinged, and with him he has a big bag of treasure, a short bow and a battle axe.
 
-They head back to the surface, and back to the inn.
+They head back to the surface(ish), and back to the inn.
 
 Find Oondar and tell him what they found.
 Found evidence of a dragon, but did not actually see the dragon.
